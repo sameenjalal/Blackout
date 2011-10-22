@@ -1,0 +1,73 @@
+
+			<script type="text/javascript">
+				var directionDisplay;
+				var directionsService = new google.maps.DirectionsService();
+				var map;
+
+				var latlngs = <?= json_encode($lat_lng); ?>;
+
+
+
+				function initialize() {
+					directionsDisplay = new google.maps.DirectionsRenderer();
+					var myOptions = {
+						zoom:7,
+						mapTypeId: google.maps.MapTypeId.ROADMAP,
+					};
+					map = new google.maps.Map($("#map_canvas")[0], myOptions);
+					directionsDisplay.setMap(map);
+					plot_points(latlngs);
+				};
+
+				$(window).load(initialize);
+
+			//	latlngs = [ new google.maps.LatLng(40.749537, -73.9879906), new google.maps.LatLng(40.758883, -73.981014), new google.maps.LatLng(40.7618193, -73.9791976), new google.maps.LatLng(40.761628, -73.968478) ];
+
+
+
+//					latlngs = [ new google.maps.LatLng(40.487978, -74.439342), new google.maps.LatLng(40.487978, -74.439342), new google.maps.LatLng(40.498187, -74.445195), new google.maps.LatLng(40.5041, -74.449091), new google.maps.LatLng(40.523768, -74.458305), new google.maps.LatLng(40.51992, -74.433583), new google.maps.LatLng(40.533959, -74.436622), new google.maps.LatLng(40.485633, -74.437406), new google.maps.LatLng(40.499666, -74.445021), new google.maps.LatLng(40.502681, -74.451444)
+				//	];
+				function plot_points(latlngs) 
+				{
+
+					for(var i=0; i < latlngs.length; i++)
+					{
+						latlngs = new google.maps.LatLng(latlngs[i].lat, latlngs[i].lng);
+					}
+
+					latlngs_start = latlngs[0];
+					latlngs_end = latlngs[latlngs.length-1];
+
+					var waypts = [];
+					for (var i = 1 ; i < latlngs.length -1 ; i++ ) {
+						waypts.push({
+							location:latlngs[i],
+							stopover:true
+						});
+					}
+
+					console.log(waypts);
+
+					var request = {
+						origin: latlngs_start, 
+						destination: latlngs_end,
+						waypoints: waypts,
+						optimizeWaypoints: false,
+						travelMode: google.maps.DirectionsTravelMode.DRIVING
+
+					};
+
+					directionsService.route(request, function(response, status) {
+						
+						if (status == google.maps.DirectionsStatus.OK) {
+							console.log(response);
+							  directionsDisplay.setDirections(response);
+						}
+					});
+
+					event.preventDefault();
+					return false;
+	
+				};
+
+			</script>

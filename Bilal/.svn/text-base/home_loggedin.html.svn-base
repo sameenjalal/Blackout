@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="description" content="Fear no BlackOut" />
+<title>BLACKOUT</title>
+
+<style type="text/css" media="all">
+@import "design.css";
+</style>
+</head>
+
+	<body>
+
+		<div id="center">
+			<div id="logo"><a href="home.html"><img src="bol.png" alt="BlackOut" height="100" width="375" /></a></div>
+
+				<div id="box1"></div>
+				<div id="box2">
+				<h1>Welcome to Blackout, Bilal Quadri!</h1>
+				
+				<a href="#" class = "leave">Logout</a>
+				
+				<p class="navigation-bar">
+				<a href="home_loggedin.html">Home</a> | 
+				<a href="adventure.php">Adventure Trail</a> | 
+				<a href="preferences.html">Preferences</a>
+				</p>
+				
+				
+				<br>
+				<br>
+				
+				<p> It sucks when you can't remember what you did last night, doesn't it?</p>
+				<p> That's where we come in. </p>
+				<br>
+				<p> When you know you're going to blackout tonight, you can just start-up our app on your smartphone. It'll create a summary of your activities that night, and email it to you in the morning when you're sober.</p>
+				</div>
+				
+				<br>
+				<br>
+				
+				<p>With our app, you can:
+
+				<ul> 
+					<li>Record your adventures</li>
+					<li>Track your phone if you lost it</li>
+					<li>Add way points (pictures, text, video, voice)</li>	
+					<li>See the locations at which you recieved text messages and calls</li>
+				</ul>
+
+				<p>Never miss out on things from a blackout again.</p> <br />
+
+				<center>
+					<a href="http://www.foursquare.com">FourSquare</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="http://usacs.rutgers.edu">Rutgers USACS</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="http://ruslug.rutgers.edu">RUSLUG</a><br />
+					Email: ru_cs@<span style="display:none">null</span>googlegroups.com
+
+				<div id="box3">
+				</div> <!-- box 3 -->
+				</div> <!-- center ends -->
+				</center>
+	</body>
+	
+	<footer>
+		<div id=fin>
+		<p class="final">Copyright©2011 USACS</p>
+		</div>
+	
+	</footer>
+</html>
+
+
+

@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+</head>
+<body linkifying="false" linkified="0" linkifytime="2">
+</body>
+</html>
+
+head{
+	background-color: #000000;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #000000;
+	font-family: Helvetica, Arial;
+}
+
+img {
+	border: 0;
+}
+
+h1 {
+	color: #fc8524;
+	border-bottom: 1px solid #cccccc;
+	font-weight: normal;
+	font-size: 1.6em;
+	padding: 5px 0 10px;
+	margin: 0px;
+}
+
+p {
+	text-align: left;
+	color: #ffffff;
+	padding-top: 1px;
+	margin: 0px;
+	line-height: 1.5em;
+	font-size: 0.9em;
+}
+
+p.final {
+	color: #ffffff;
+	text-align: center;
+	padding-top: 1px;
+	margin: 0px;
+	line-height: 1.5em;
+	font-size: 0.7em;
+}
+
+li {
+	font-size: 0.9em;
+}
+
+a {
+	color: #fc8524;
+}
+
+#center {
+	color: #ffffff;
+	width: 740px;
+	margin: 0px auto;
+}
+
+#logo {
+		height: 44px;
+}
+
+#logo img {
+	margin-top: 6px;
+	margin-left: 24px;
+}
+
+#box1 {
+	background: #000000 0px 0px no-repeat;
+	height: 8px;
+	width: 740px;
+	font-size: 0.1em; /*ie6 */
+	margin-top: 21px;
+}
+
+#box2 {
+	background: #000000 0px 0px repeat-y;
+	width: 692px;
+	padding: 0 24px;
+}
+
+#box3 {
+	background: url(box3.png) #000000 0px 0px no-repeat;
+	width: 740px;
+	height: 22px;
+}
+
+#links {
+	text-align: center;
+}
+
+#links a {
+	padding: 0 20px;
+}
+
+input#foursquare_login {
+	float: right;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	background: url(button.png) #000000;
+	width: 300px;
+	height: 60px;
+	margin-top: 10px;
+	margin-right: 20px;
+
+}
+
+#googlemap {
+	text-align: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+#menu {
+}
+
+a.leave {
+	float: right;
+	margin-top: 2px;
+	margin-right: 10px;
+}
+
+ul.site_nav {
+	list-style: none outside none;
+    border-right: 1px solid #818181;
+    display: block;
+    float: left;
+    font-family: "Lucida Grande",sans-serif;
+    font-size: 12px;
+    height: 3em;
+    list-style-type: none;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-align: center;
+}
+
+li.selected {
+	list-style: none outside none;
+	background-color: #333333;
+    background-image: -moz-linear-gradient(0% 100% 90deg, #333333, #4C4C4C, #474747 100%);
+	}
+
+#navBar {
+	list-style: none outside none;
+}
+
+p.navigation-bar {
+	background-color: black;
+}
+
+
+
